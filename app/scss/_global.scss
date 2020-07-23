@@ -3,7 +3,7 @@ html {
 }
 
 *, *::before, *::after {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 a {
@@ -32,8 +32,15 @@ body {
     min-width: 320px;
     overflow-x: hidden;
     position: relative;
+    color: #2F3035;
+    font-family: "SFProDisplay-Regular", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
 }
 
 .container {
-    
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
