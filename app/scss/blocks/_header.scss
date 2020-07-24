@@ -1,4 +1,6 @@
-
+.header {
+    margin-bottom: 78px;
+}
 .header__top-inner {
     display: flex;
     justify-content: space-between;
@@ -41,8 +43,7 @@
     display: inline-block;
     padding-right: 10px;
 }
-.user-list__link {
-}
+ 
 .basket {
     position: relative;
     &__num {
@@ -61,13 +62,40 @@
         right: -15px;
     }
 }
-.header__bottom {
-}
-.header__bottom-inner {
-}
+
+
 .menu-categories {
+    background-color: #F0F0F4;
+    display: flex;
+    min-height: 53px;
+    align-items: center;
+    justify-content: space-around;
 }
-.menu-categories__item {
-}
+
 .menu-categories__link {
+    transition: all .3s linear;
+    font-weight: 400;
+    padding: 15px 0 16px;
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        left: auto;
+        right: 0;
+        background-color: #1C62CD;
+        height: 3px;
+        bottom: -2px;
+        transition: all .3s linear;
+        
+    }
+    &:hover::before {
+        width: 100%;
+        right: auto;
+        left: 0;
+    }
+
+    &:hover {
+        color: #000;
+    }
 }
