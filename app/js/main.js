@@ -20,8 +20,6 @@ $(function(){
         $(this).addClass('search__tabs-item--active');
         $($(this).attr('href')).addClass('search__content-item--active'); 
 
-
-
     });
   
 });
