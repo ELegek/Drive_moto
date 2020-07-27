@@ -21,5 +21,10 @@ $(function(){
         $($(this).attr('href')).addClass('tabs-content--active'); 
 
     });
+
+    // Favorite
+    $('.products-item__favorite').on('click', function(){
+        $('.products-item__favorite').toggleClass('products-item__favorite--active');
+    });
   
 });
