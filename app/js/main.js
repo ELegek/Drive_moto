@@ -26,5 +26,11 @@ $(function(){
     $('.products-item__favorite').on('click', function(){
         $('.products-item__favorite').toggleClass('products-item__favorite--active');
     });
+
+    // Products slider
+
+    $('.products-slider').slick({
+
+    });
   
 });

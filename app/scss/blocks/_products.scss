@@ -1,5 +1,13 @@
 .products__inner {}
 
+.products__title {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: 'Barlow', sans-serif;
+    margin-bottom: 25px;
+}
+
 .tabs-wrapper {}
 
 .tabs {}
@@ -8,7 +16,20 @@
 
 .tab {}
 
-.products__tab {}
+.products__tabs {
+    margin-bottom: 25px;
+}
+
+.products__tab {
+    padding-bottom: 12px;
+}
+
+.products__tab + .products__tab{
+    margin-left: 50px;
+}
+.products__tab.tab--active {
+    border-bottom: 2px solid #1C62CD;
+}
 
 .tab--active {}
 
@@ -29,7 +50,6 @@
 .products-item__wrapper {
     position: relative;
     width: 271px;
-    
 }
 
 .products-item__wrapper.products-item__not-available .products-item__price {
@@ -65,6 +85,7 @@
         box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
         color: #1C62CD;
     }
+
     &:hover .products-item__notify-text {
         color: #2F3035;
     }
