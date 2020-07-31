@@ -1,3 +1,6 @@
+.products {
+    margin-bottom: 80px; 
+}
 .products__title {
     font-weight: bold;
     font-size: 25px;
@@ -193,7 +196,7 @@
 
 .product__more {
     text-align: center;
-    margin: 35px 0 80px;
+    margin: 35px 0;
 }
 .product__more-link {
     padding: 16px 43px;
