@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
 
 
     // Slider
@@ -11,26 +11,29 @@ $(function(){
 
 
     // Tabs
-    $('.tab').on('click', function(e){
+    $('.tab').on('click', function (e) {
         e.preventDefault();
 
-        $('.tab').removeClass('tab--active');
-        $('.tabs-content').removeClass('tabs-content--active');
+        $($(this).siblings()).removeClass('tab--active');
+        $($(this).parent().siblings().find('div')).removeClass('tabs-content--active');
 
         $(this).addClass('tab--active');
-        $($(this).attr('href')).addClass('tabs-content--active'); 
+        $($(this).attr('href')).addClass('tabs-content--active');
 
     });
 
     // Favorite
-    $('.products-item__favorite').on('click', function(){
-        $('.products-item__favorite').toggleClass('products-item__favorite--active');
+    $('.products-item__favorite').on('click', function () {
+        $(this).toggleClass('products-item__favorite--active');
     });
 
     // Products slider
 
     $('.products-slider').slick({
-
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        prevArrow: '  <button class="products-slider__slider-btn products-slider__slider-btnprev"><img src="images/arrow-black-left.svg" alt=""></button>',
+        nextArrow: '  <button class="products-slider__slider-btn products-slider__slider-btnnext"><img src="images/arrow-black-right.svg" alt=""></button>',
     });
-  
+
 });
