@@ -18,6 +18,10 @@
             font-size: 14px;
             line-height: 17px;
         }
+        &-social {
+
+        }
+
     }
 
     &-form {
@@ -50,7 +54,12 @@
             font-family: "SFProDisplay-Semibold", sans-serif;
         }
     }
-    &-list
+
+
+    &-list {
+        font-size: 14px;
+        line-height: 27px;
+    }
 
     &__bottom {
         padding: 46px 0 22px;
@@ -63,5 +72,13 @@
             color: #48494D;
             margin: 0 40px;
         }
+    }
+}
+.social-list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    &__item + .social-list__item {
+        margin-left: 30px;
     }
 }
