@@ -55,7 +55,7 @@
     text-align: center;
     padding: 52px 20px 31px;
     transition: all .3s;
-
+    outline: none;
     &:hover .products-item__hover-text {
         opacity: 1;
         color: #2F3035;
@@ -107,13 +107,13 @@
         height: 22px;
         top: 0;
         left: 0;
-        background-image: url('../../images/favorite.svg');
+        background-image: url('./../images/favorite.svg');
     }
 }
 
 .products-item__favorite--active {
     &::before {
-        background-image: url('../../images/favorite-active.svg');
+        background-image: url('./../images/favorite-active.svg');
     }
 }
 
