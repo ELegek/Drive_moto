@@ -1,0 +1,12 @@
+.catalog {
+    
+    &__inner-list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .products-item__wrapper {
+            margin-bottom: 30px;
+        }
+    }
+}
