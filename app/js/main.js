@@ -36,4 +36,8 @@ $(function () {
         nextArrow: '  <button class="products-slider__slider-btn products-slider__slider-btnnext"><img src="images/arrow-black-right.svg" alt=""></button>',
     });
 
+
+    // Form
+    $('.filter-style').styler();
+
 });

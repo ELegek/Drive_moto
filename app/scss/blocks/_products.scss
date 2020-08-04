@@ -111,13 +111,13 @@
         height: 22px;
         top: 0;
         left: 0;
-        background-image: url('./../images/favorite.svg');
+        background-image: url('../../images/favorite.svg');
     }
 }
 
 .products-item__favorite--active {
     &::before {
-        background-image: url('./../images/favorite-active.svg');
+        background-image: url('../../images/favorite-active.svg');
     }
 }
 

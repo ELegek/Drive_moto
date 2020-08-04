@@ -107,7 +107,7 @@
           <button>еще</button>
         </div>
         <div class="catalog__filter-btn">
-          <select>
+          <select class="filter-style">
             <option value=""></option>
             <option value=""></option>
             <option value=""></option>
@@ -143,7 +143,34 @@
               <a class="tab aside-filter__tab" href="#"><span>по марке</span></a>
             </div>
             <div class="tabs-container">
-              <div class="tabs-content aside-filter__tabs-content tabs-content--active"></div>
+              <div class="tabs-content aside-filter__tabs-content tabs-content--active">
+
+                <form class="aside-filter__form">
+                  <ul class="aside-filter__list">
+                    <li class="aside-filter__item-drop">
+                      <p class="aside-filter__item-title">Наличие</p>
+                      <div class="aside-filter__content">
+                        <div class="aside-filter__content-box">
+                          <label>
+                            <input class="filter-style" type="checkbox">
+                            В наличии
+                          </label>
+                        </div>
+                        <div class="aside-filter__content-box">
+                          <label>
+                            <input class="filter-style" type="checkbox">
+                            Под заказ
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="aside-filter__item-drop"></li>
+                    <li class="aside-filter__item-drop"></li>
+                    <li class="aside-filter__item-list"></li>
+                  </ul>
+                </form>
+
+              </div>
               <div class="tabs-content aside-filter__tabs-content">content-2</div>
             </div>
           </div>
