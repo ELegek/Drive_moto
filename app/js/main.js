@@ -40,4 +40,15 @@ $(function () {
     // Form
     $('.filter-style').styler();
 
+
+    // Checkeds
+    $('.filter__item-drop').on('click', function(){
+        $(this).toggleClass('filter__item-drop--active');
+        $(this).next().slideToggle('200');
+    });
+
+    // Range.slider
+    $(".js-range-slider").ionRangeSlider();
+
+
 });
