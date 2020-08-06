@@ -48,7 +48,11 @@ $(function () {
     });
 
     // Range.slider
-    $(".js-range-slider").ionRangeSlider();
+    $(".js-range-slider").ionRangeSlider({
+        type: "double",
+        min: 100000, 
+        max: 500000,
+    });
 
 
 });
