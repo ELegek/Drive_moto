@@ -43,7 +43,7 @@
     &__content {
         display: flex;
         flex-wrap: wrap;
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     &__content.aside-filter__content-radio {
@@ -52,6 +52,7 @@
 
     &__content-box {
         width: 50%;
+        margin-bottom: 10px;
     }
 }
 
@@ -206,7 +207,7 @@
 
 .aside-filter__item-list {
     margin: 40px 0 40px;
-    
+
 }
 
 .filter__item-list {
@@ -268,7 +269,7 @@
 }
 
 .jq-selectbox__select:hover,
-.jq-selectbox__select:active  {
+.jq-selectbox__select:active {
     background: transparent;
     box-shadow: none;
 }
@@ -293,4 +294,33 @@
 
 .jq-selectbox__dropdown {
     border-radius: 0;
+}
+
+.filter-more {
+    width: 100%;
+}
+
+.filter-more__btn {
+    border: none;
+    border-bottom: 1px solid #1C62CD;
+    background-color: transparent;
+    padding: 0;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1C62CD;
+}
+
+.filter-search {
+    width: 100%;
+    border: 1px solid #E0E0E0;
+    height: 30px;
+    padding: 0 20px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-bottom: 20px;
+
+    &::placeholder {
+        color: #BDBEC2;
+
+    }
 }
