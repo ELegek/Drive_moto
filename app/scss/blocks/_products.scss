@@ -30,6 +30,7 @@
 .products-item__wrapper {
     position: relative;
     width: 271px;
+    transition: all .3s linear;
 }
 
 .products-item__wrapper.products-item__not-available .products-item__price {
@@ -49,7 +50,7 @@
 }
 
 .products-item {
-    min-height: 400px;
+    width: 100%;
     border: 1px solid #CDCDCD;
     border-radius: 3px;
     text-align: center;
