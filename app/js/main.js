@@ -42,7 +42,7 @@ $(function () {
 
 
     // Checkeds
-    $('.filter__item-drop').on('click', function(){
+    $('.filter__item-drop, .filter__extra').on('click', function(){
         $(this).toggleClass('filter__item-drop--active');
         $(this).next().slideToggle('200');
     });
