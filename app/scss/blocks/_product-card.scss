@@ -73,6 +73,10 @@
 
     &__buttons {
         margin-bottom: 50px;
+
+        a + a{
+            margin-left: 30px;
+        }
     }
 
     &__tab {

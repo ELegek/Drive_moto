@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Product</title>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -112,14 +113,14 @@
           <h1 class="product-card__title">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</h1>
           <p class="product-card__code">Код товара: 366666-2</p>
           <div class="product-card__buttons">
-            <button class="product-card__icon-favorite">
-              <img src="images/heart.svg" alt=""></button>
-            <button class="product-card__icon-comparsion">
+            <a class="product-card__icon-favorite" href="#">
+              <img src="images/heart.svg" alt=""></a>
+            <a class="product-card__icon-comparsion" href="#">
               <img src="images/comparsion.svg" alt="">
-            </button>
-            <div class="rate">
-
-            </div>
+            </a>
+            <a class="rate" href="#">
+              <div class="rate-yo" data-rateyo-rating="4"></div>
+            </a>
           </div>
           <div class="tabs-wrapper product-card__tabs">
             <div class="tabs">
@@ -236,6 +237,7 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
   <script src="js/libs.min.js"></script>
   <script src="js/main.js"></script>
 </body>
