@@ -57,6 +57,8 @@
     padding: 52px 20px 31px;
     transition: all .3s;
     outline: none;
+    min-height: 408px;
+    
     &:hover .products-item__hover-text {
         opacity: 1;
         color: #2F3035;
