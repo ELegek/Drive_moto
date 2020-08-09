@@ -1,5 +1,5 @@
 .header {
-    margin-bottom: 80px;
+    
 }
 .header__top-inner {
     display: flex;
@@ -139,4 +139,8 @@
 
 .menu__mobile-linewrapp {
     display: none;
+}
+
+.header__bottom-inner {
+    margin-bottom: 80px;
 }
