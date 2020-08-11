@@ -119,4 +119,8 @@ $(function () {
         $('.menu-mobile__list').toggleClass('menu-mobile__list--active');
     });
 
+    $('.footer__topdrop').on('click', function(){
+        $(this).next().slideToggle();
+    });
+
 });

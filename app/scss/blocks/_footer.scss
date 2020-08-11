@@ -24,6 +24,8 @@
 
     }
 
+
+
     &-form {
         margin-top: 34px;
         display: flex;
@@ -77,6 +79,7 @@
 .social-list {
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 100%;
     &__item + .social-list__item {
         margin-left: 30px;
