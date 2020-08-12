@@ -207,6 +207,10 @@
         color: #7f7f77;
         font-weight: 500;
         padding: 15px 0;
+        
+    }
+
+    .footer__top-item {
         border-bottom: 2px solid #F9F9FC;
     }
 
@@ -215,6 +219,26 @@
         border-top: 2px solid #F9F9FC;
     }
 
+    .footer__top-social {
+        border-bottom: none;
+    }
+
+    .footer__topdrop {
+        position: relative;
+        &::after {
+            position: absolute;
+            content: "";
+            background-image: url('../images/arrow-down.svg');
+            right: 0;
+            bottom: 20px;
+            width: 12px;
+            height: 8px;
+            transition: all .2s linear;
+        }
+    }
+    .footer__topdrop--active::after {
+        transform: rotate(180deg);
+    }
 }
 
 @media (max-width: 440px) {
