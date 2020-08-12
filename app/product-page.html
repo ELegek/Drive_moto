@@ -18,6 +18,11 @@
       <div class="container">
         <div class="header__top-inner">
           <nav class="menu">
+            <button class="menu__btn">
+              <div class="menu__btn-line"></div>
+              <div class="menu__btn-line"></div>
+              <div class="menu__btn-line"></div>
+            </button>
             <ul class="menu__list">
               <li class="menu__item">
                 <a class="menu__link" href="#">Магазины</a>
@@ -50,6 +55,106 @@
         </div>
       </div>
     </div>
+
+    <ul class="menu-mobile__list">
+      <li class="menu-mobile_item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/user.svg" alt="">
+          <p>Войти</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/user.svg" alt="">
+          <p>Регистрация</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/heart.svg" alt="">
+          <p>Избранное</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/basket.svg" alt="">
+          <p>Корзина</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/house.svg" alt="">
+          <p>Магазины</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/procent.svg" alt="">
+          <p>Акции</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile__link" href="#">
+          <img class="menu-mobile__img" src="images/box.svg" alt="">
+          <p>Доставка и оплата</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile__link" href="#">
+          <p>Квадроциклы</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile__link" href="#">
+          <p>Катера</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile__link" href="#">
+          <p>Гидроциклы</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile__link" href="#">
+          <p>Лодки</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile__link" href="#">
+          <p>Вездеходы</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile__link" href="#">
+          <p>Снегоходы</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile__link" href="#">
+          <p>Двигатели</p>
+        </a>
+      </li>
+      <li class="menu-mobile_item">
+        <a class="menu-mobile__link" href="#">
+          <p>Запчасти</p>
+        </a>
+      </li>
+    </ul>
+
+    <div class="menu__mobile-linewrapp">
+      <ul class="menu__mobile-line">
+        <li class="menu__item">
+          <a class="menu__link" href="#">Магазины</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Акции</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Доставка и оплата</a>
+        </li>
+      </ul>
+    </div>
+
     <div class="header__bottom">
       <div class="container">
         <div class="header__bottom-inner">
@@ -86,17 +191,16 @@
 
   <div class="breadcrumbs">
     <div class="container">
-      <ul class="breadcrumbs__list">
-        <li class="breadcrumbs__list-item">
-          <a href="#">Главная</a>
-        </li>
-        <li class="breadcrumbs__list-item">
-          <a href="#">Гидроциклы</a>
-        </li>
-        <li class="breadcrumbs__list-item">
-          <span>Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</span>
-        </li>
-      </ul>
+      <div class="breadcrumbs__inner ">
+        <ul class="breadcrumbs__list mobile-overflow">
+          <li class="breadcrumbs__list-item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <a href="#">Гидроциклы</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 
@@ -594,8 +698,8 @@
               <button class="footer-form__btn" type="submit">Отправить</button>
             </form>
           </div>
-          <div class="footer__top-item">
-            <h6 class="footer__top-title">Информация</h6>
+          <div class="footer__top-item footer__top-itemdrop">
+            <h6 class="footer__top-title footer__topdrop">Информация</h6>
             <ul class="footer-list">
               <li class="footer-list__item a" href="#">О компании</li>
               <li class="footer-list__item a" href="#">Контакты</li>
@@ -604,13 +708,13 @@
             </ul>
           </div>
           <div class="footer__top-item">
-            <h6 class="footer__top-title">Интернет-магазин</h6>
-            <ul class="footer-list">
-              <li class="footer-list__item a" href="#">Доставка и самовывоз</li>
-              <li class="footer-list__item a" href="#">Оплата</li>
-              <li class="footer-list__item a" href="#">Возврат-обмен</li>
-              <li class="footer-list__item a" href="#">Новости</li>
-            </ul>
+            <h6 class="footer__top-title footer__topdrop">Интернет-магазин</h6>
+              <ul class="footer-list">
+                <li class="footer-list__item a" href="#">Доставка и самовывоз</li>
+                <li class="footer-list__item a" href="#">Оплата</li>
+                <li class="footer-list__item a" href="#">Возврат-обмен</li>
+                <li class="footer-list__item a" href="#">Новости</li>
+              </ul>
           </div>
           <div class="footer__top-item footer__top-social">
             <ul class="social-list">
